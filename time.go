@@ -123,8 +123,8 @@ func (t Time) Truncate(d Duration) Time {
 }
 
 // UTC ...
-func (t Time) Unix() Time {
-	return Time{t.Time.Unix()}
+func (t Time) UTC() Time {
+	return Time{t.Time.UTC()}
 }
 
 // UnmarshalJSON ...
